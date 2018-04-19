@@ -1,0 +1,29 @@
+<h2>Class Schedule</h2>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <head>
+    <body
+        <div class="table table-bordered table-striped">
+        <div class="container">
+
+
+    <table class="table">
+  <tr>
+    <th>Period</th>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Website</th>
+  </tr>
+
+                {% for course in courses %}
+              <tr>
+                <td>{{ course.period }}</td>
+                <td>{{ course.name }}</td>
+                <td>{{ course.teacher_name }}</td>
+                <td><a href="{{ course.resource_url }}">{{ course.resource_name }}</a></td>
+              </tr>
+              {% endfor %}
+
+    </body>
+    </head>
+    </table>
