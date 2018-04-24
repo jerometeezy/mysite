@@ -1,4 +1,7 @@
-<h2>Class Schedule</h2>
+{% extends "base.html" %}
+{% block title %}My Class Schedule{% endblock %}
+{%block content %}
+<h2>My Class Schedule</h2>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <head>
@@ -23,7 +26,5 @@
                 <td><a href="{{ course.resource_url }}">{{ course.resource_name }}</a></td>
               </tr>
               {% endfor %}
-
-    </body>
-    </head>
     </table>
+{% endblock %}
