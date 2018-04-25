@@ -8,9 +8,7 @@ import constants
 
 app = Flask(__name__)
 
-@app.route('/')
-def hello_world():
-    return 'Hello from Jerome!'
+
 
 @app.route('/about_me')
 @app.route('/aboutme')
@@ -32,3 +30,8 @@ def class_schedule():
 @app.route('/register')
 def register():
     return render_template('register.html')
+
+@app.route('/')
+def homepage():
+    return render_template('index.html')
+
