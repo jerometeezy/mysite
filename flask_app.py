@@ -35,3 +35,7 @@ def register():
 def homepage():
     return render_template('index.html')
 
+@app.route('/top_ten_songs')
+def top_ten_songs():
+    return render_template('top_ten_songs.html', songs=constants.TOP_TEN_SONGS)
+
