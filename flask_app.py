@@ -4,10 +4,14 @@
 from flask import Flask
 from flask import render_template
 import constants
+from flask_sqlalchemy import SQLAlchemy
+
+
 
 
 app = Flask(__name__)
-
+app.config.from_object('config.BaseConfig')
+db = SQLAlchemy(app)
 
 
 @app.route('/about_me')
