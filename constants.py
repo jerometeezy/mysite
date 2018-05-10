@@ -34,7 +34,7 @@ COURSES = [
                   resource_name='Advanced PE',
                   resource_url='https://sparkpe.org/physical-education-resources/')
 ]
-"""
+''''
 TOP_TEN_SONGS = [
     song.Song(title="OTW",
                 artist_name="Khalid",
